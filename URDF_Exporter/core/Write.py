@@ -445,7 +445,7 @@ def write_yaml(package_name, robot_name, save_dir, joints_dict):
     try: os.mkdir(save_dir + '/launch')
     except: pass 
 
-    controller_name = robot_name + '_controller'
+    controller_name = robot_name # + '_controller'
     file_name = save_dir + '/launch/controller.yaml'
     with open(file_name, 'w') as f:
         f.write(controller_name + ':\n')
